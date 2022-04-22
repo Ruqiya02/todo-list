@@ -39,6 +39,7 @@ h1 {
     height: 2.951vw;
     margin-top: 1.128vw;
     text-align: center;
+    font-size: 2.5vw;
 }
 
  .sort-photo {
@@ -49,7 +50,7 @@ h1 {
      justify-content: flex-end;
  }
 
-.input-container{
+.input-container,ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,7 +92,7 @@ input {
     
 }
 .button2:hover{
-    background-color: #705c89;
+    background-color: #3e314d;
 }
 
 .del {
@@ -102,9 +103,12 @@ input {
     height: 1.736vw;
     border: 0.087vw solid #C4C4C4;
     border-radius: 50%;
-    background-image: url("/project2/photo/Group 52.svg");
+    background-image: url("./photo/delBtn.svg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+.del:hover{
+    background-image: url("./photo/delBtn1.svg");
 }
 .buttons {
     margin-top: 1.5vw;
@@ -114,7 +118,5 @@ input {
 }
 p{
     text-align: center;
-    margin-left: 3vw ;
-
-    
+    margin-left: 3vw ;   
 }
