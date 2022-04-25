@@ -1,20 +1,33 @@
-const todoİnput=document.querySelector('input');
-const todoList=document.querySelector('.todo-list');
-const AddBtn=document.querySelector('.button2');
-const delButton=document.querySelector('.del');
+const inputContainer=document.querySelector('.input-container')
+const input=document.querySelector('input')
+const todoList=document.querySelector('.listClass')
 document.addEventListener('keyup',(event)=>{
     if(event.keyCode==13){
-        if(todoİnput.value!==""&&todoİnput.value!==" "){
-            event.preventDefault();
-            let listElement=document.createElement('div')
-            listElement.classList.add('.input-container')
-            listElement.innerHTML=todoİnput.value
-
-            todoList.append(listElement)
-        }
+        if(input.value!==''&&input.value!==' '){
+            event.preventDefault()
+           let newElement=document.createElement('li')
+           newElement.classList.add('item')
+           newElement.innerHTML=input.value
+           todoList.append(newElement)
+           let removebttn=document.createElement('button')
+            removebttn.classList.add('delete2')
+            newElement.append(removebttn)
+            input.value='';
+            inputContainer.style.display='none'
+            todoList.style.borderBottom='0.1em solid #C4C4C4'
+            todoList.style.borderRadius='0.9vw'
     }
 })
-delButton.addEventListener('click',()=>{
-    todoİnput.value=''
+const addBttn=document.querySelector('.button2')
+addBttn.addEventListener('click',()=>{
+    inputContainer.style.display=""
+    todoList.style.borderBottom='none'
+    todoList.style.borderRadius="0.9vw 0.9vw 0 0"
 })
+const removebttn1=document.querySelector(".del")
+removebttn1.addEventListener('click',()=>{
+    input.value=""
+})
+
+
 

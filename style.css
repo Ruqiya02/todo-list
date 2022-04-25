@@ -49,16 +49,27 @@ h1 {
      display: flex;
      justify-content: flex-end;
  }
+ .sort-photo:hover{
+    
+ }
 
-.input-container,ul{
+.input-container,.listClass{
+    width: 24.826vw;
+    border: 0.087vw solid #C4C4C4;
+    padding: 0.5vw;
+}
+.input-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 24.826vw;
-    height: 3.472vw;
-    border: 0.087vw solid #C4C4C4;
-    border-radius: 0.9vw;
     padding: 0.5vw;
+    height: 3.472vw;
+    border-top: none;
+    border-radius: 0 0 .9vw 0.9vw ;
+}
+.listClass{
+    border-bottom: none;
+    border-radius:0.9vw 0.9vw 0 0 ;
+    list-style: none;
 }
 
 input {
@@ -99,10 +110,8 @@ input {
     background: none;
     border: none;
     outline: none;
-    width: 1.736vw;
-    height: 1.736vw;
-    border: 0.087vw solid #C4C4C4;
-    border-radius: 50%;
+    width: 1.5vw;
+    height: 1.5vw;
     background-image: url("./photo/delBtn.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -116,7 +125,27 @@ input {
     font-size: 1.215vw; 
     
 }
-p{
-    text-align: center;
-    margin-left: 3vw ;   
+.addtext{
+    margin: 3vw;
+}
+.sort2{
+    display: none;
+}
+.delete2{
+    background-image: url('/photo/delBtn.svg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 1.5vw;
+    height: 1.5vw;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+.delete2:hover{
+    background-image: url('/photo/delBtn1.svg');
+}
+.item{
+    line-height: 250%;
+    display: flex;
+    justify-content: space-between;
 }
