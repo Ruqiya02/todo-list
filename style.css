@@ -50,7 +50,7 @@ h1 {
      justify-content: flex-end;
  }
  .sort-photo:hover{
-    
+    cursor: pointer;
  }
 
 .input-container,.listClass{
@@ -70,6 +70,8 @@ h1 {
     border-bottom: none;
     border-radius:0.9vw 0.9vw 0 0 ;
     list-style: none;
+    max-height: 15vw;
+    overflow: auto;
 }
 
 input {
@@ -104,8 +106,8 @@ input {
 }
 .button2:hover{
     background-color: #3e314d;
+    cursor: pointer;
 }
-
 .del {
     background: none;
     border: none;
@@ -118,6 +120,7 @@ input {
 }
 .del:hover{
     background-image: url("./photo/delBtn1.svg");
+    cursor: pointer;
 }
 .buttons {
     margin-top: 1.5vw;
@@ -143,6 +146,7 @@ input {
 }
 .delete2:hover{
     background-image: url('/photo/delBtn1.svg');
+    cursor: pointer;
 }
 .item{
     line-height: 250%;
