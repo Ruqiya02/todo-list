@@ -16,7 +16,9 @@ document.addEventListener('keyup',(event)=>{
             inputContainer.style.display='none'
             todoList.style.borderBottom='0.1em solid #C4C4C4'
             todoList.style.borderRadius='0.9vw'
-    }
+            deleteX()
+            
+    }}
 })
 const addBttn=document.querySelector('.button2')
 addBttn.addEventListener('click',()=>{
@@ -28,6 +30,21 @@ const removebttn1=document.querySelector(".del")
 removebttn1.addEventListener('click',()=>{
     input.value=""
 })
+function deleteX() {
+    const deleteBtn = document.querySelectorAll('.delete2');
+    deleteBtn.forEach(item => {
+        item.addEventListener('click', forRemove);
+    });
+}
+function forRemove() {
+    this.parentNode.remove(this.parentNode);
+    const listElements = document.querySelectorAll(".listClass");
+    if(listElements.length==0){
+        todoList.style.display="none"
+        inputContainer.style.borderRadius="0.5vw"
+        inputContainer.style.border="0.1em solid #c4c4c4"
+    }
+}
 
 
 
