@@ -28,7 +28,7 @@
 
     .top {
         width: 100%;
-        height: 5vw;
+        height: 7vw;
         background: #FFDC40;
         border-top-left-radius: 1.568vw;
         border-top-right-radius: 1.568vw;
@@ -52,6 +52,11 @@
 
     .sort-photo:hover {
         cursor: pointer;
+    }
+   
+    .sort1, .sort2{
+        width: 5vw;
+        height: 5vw;
     }
 
     .input-container,
