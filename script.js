@@ -17,7 +17,7 @@ document.addEventListener('keyup',(event)=>{
             input.value='';
             inputContainer.style.display='none'
             todoList.style.borderBottom='0.1em solid #C4C4C4'
-            todoList.style.borderRadius='0.9vw'
+            todoList.style.borderRadius='1vw'
             todoList.style.display="block";
             
             deleteX()
@@ -28,9 +28,9 @@ const addBttn=document.querySelector('.button2')
 addBttn.addEventListener('click',()=>{
     inputContainer.style.display="flex"
     inputContainer.style.borderTop='none';
-    inputContainer.style.borderRadius="0 0 0.9vw 0.9vw"
+    inputContainer.style.borderRadius="0 0 1vw 1vw"
     todoList.style.borderBottom='none'
-    todoList.style.borderRadius="0.9vw 0.9vw 0 0"
+    todoList.style.borderRadius="1vw 1vw 0 0"
 })
 const removebttn1=document.querySelector(".del")
 removebttn1.addEventListener('click',()=>{
@@ -48,7 +48,7 @@ function forRemove() {
     if(todoList.childElementCount==0){
         todoList.style.display="none"
         inputContainer.style.display="flex";
-        inputContainer.style.borderRadius="0.5vw"
+        inputContainer.style.borderRadius="1vw"
         inputContainer.style.border="0.1em solid #c4c4c4"
     }
 }
@@ -57,16 +57,45 @@ const drag = document.querySelector('.wrapper')
 new Sortable(drag, {
     animation: 250
 })
-function forSorting(){
-    let arr=[];
-    const items=document.querySelectorAll('.item')
+const items=document.querySelectorAll('.item')
+function forSortingUp(){
+    let arrUp=[];
     items.forEach(item=>{
-        arr.push(item.innerHTML);
+        arrUp.push(item.innerHTML);
 })
-    arr.sort()
+    arrUp.sort()
+    deleteX();
 }
-const sortbttn=document.querySelector('.sort1')
-sorting1.addEventListener('click',forSorting)
+function forSortingDown(){
+    let arrDown=[]
+    items.forEach(item=>{
+        arrDown.push(item.innerHTML)
+    })
+    arrDown.reverse()
+    deleteX();
+    
+}
+
+const sortbttn1=document.querySelector('.sort1')
+const sortbttn2=document.querySelector('.sort2')
+sortbttn1.addEventListener('click',forSortingUp)
+sortbttn2.addEventListener('click',forSortingDown)
+sortbttn1.addEventListener('mouseover', (event) => {
+    event.target.setAttribute('src', 'photo/sortimgDown2.svg');
+})
+sortbttn1.addEventListener('mouseout', (event) => {
+    event.target.setAttribute('src', 'photo/sortimgDown.svg');
+});
+sortbttn2.addEventListener('mouseover',(event) => {
+    event.target.setAttribute('src', 'photo/sortimgUp2.svg')
+})
+sortbttn2.addEventListener('mouseout',(event) => {
+    event.target.setAttribute('src', 'photo/sortimgUp.svg')
+})
+
+
+
+
 
 
 

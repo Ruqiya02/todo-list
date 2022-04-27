@@ -63,12 +63,12 @@ h1 {
     justify-content: space-between;
     padding: 0.5vw;
     height: 3.472vw;
-    border-top: none;
-    border-radius: 0 0 .9vw 0.9vw ;
+    border-radius: 1vw 1vw 1vw 1vw ;
 }
 .listClass{
+    display: none;
     border-bottom: none;
-    border-radius:0.9vw 0.9vw 0 0 ;
+    border-radius:1vw 1vw 0 0 ;
     list-style: none;
     max-height: 15vw;
     overflow: auto;
@@ -109,6 +109,7 @@ input {
     cursor: pointer;
 }
 .del {
+    margin-top: 0.434vw;
     background: none;
     border: none;
     outline: none;
@@ -135,6 +136,7 @@ input {
     display: none;
 }
 .delete2{
+    margin-top: 0.434vw;
     background-image: url('/photo/delBtn.svg');
     background-size:cover;
     background-repeat: no-repeat;
@@ -143,6 +145,7 @@ input {
     border: none;
     background-color: white;
     outline: none;
+
 }
 .delete2:hover{
     background-image: url('/photo/delBtn1.svg');
