@@ -64,13 +64,18 @@ function forSortingUp(){
         arrUp.push(item.innerHTML);
 })
     arrUp.sort()
+    sortbttn1.style.display='none'
+    sortbttn2.style.display='block'
     deleteX();
 }
 function forSortingDown(){
     let arrDown=[]
     items.forEach(item=>{
         arrDown.push(item.innerHTML)
+        console.log(arrDown)
     })
+    sortbttn2.style.display='none'
+    sortbttn1.style.display='block'
     arrDown.reverse()
     deleteX();
     
