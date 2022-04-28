@@ -21,13 +21,13 @@ document.addEventListener('keyup', (event) => {
             todoList.style.display = "block";
             todoList.scrollTop=todoList.scrollHeight
 
-            deleteX()
+            deletewithX()
 
         }
     }
 })
-const addBttn = document.querySelector('.button2')
-addBttn.addEventListener('click', () => {
+const addButton = document.querySelector('.button2')
+addButton.addEventListener('click', () => {
     inputContainer.style.display = "flex"
     inputContainer.style.borderTop = 'none';
     inputContainer.style.borderRadius = "0 0 1vw 1vw"
@@ -39,7 +39,7 @@ removebttn1.addEventListener('click', () => {
     input.value = ""
 })
 
-function deleteX() {
+function deletewithX() {
     const deleteBtn = document.querySelectorAll('.delete2');
     deleteBtn.forEach(item => {
         item.addEventListener('click', forRemove);
@@ -74,7 +74,7 @@ function forSortingUp() {
     items.forEach((item, index) => {
         item.innerHTML = arrUp[index]
     })
-    deleteX();
+    deletewithX();
 }
 
 function forSortingDown() {
@@ -90,7 +90,7 @@ function forSortingDown() {
     items.forEach((item, index) => {
         item.innerHTML = arrDown[index]
     })
-    deleteX();
+    deletewithX();
 
 }
 
