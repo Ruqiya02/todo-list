@@ -33,6 +33,8 @@ addButton.addEventListener('click', () => {
     inputContainer.style.borderRadius = "0 0 1vw 1vw"
     todoList.style.borderBottom = 'none'
     todoList.style.borderRadius = "1vw 1vw 0 0"
+    todoList.scrollTop=todoList.scrollHeight
+    input.focus()
 })
 const removebttn1 = document.querySelector(".del")
 removebttn1.addEventListener('click', () => {
