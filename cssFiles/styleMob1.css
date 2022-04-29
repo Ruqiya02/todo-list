@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@media screen and (min-width:320px) and (max-width:800px)  {
+
+@media screen and (min-width:320px) and (max-width:800px) {
+
+
     * {
         margin: 0;
         padding: 0;
@@ -8,7 +11,6 @@
 
     body {
         font-family: Roboto;
-        width: 100vw;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -20,31 +22,31 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80vw;
-        border: 0.3vw solid #C4C4C4;
+        width: 38.281687500000004vw;
+        border: 0.11418749999999997vw solid #C4C4C4;
         box-sizing: border-box;
-        border-radius: 1.968vw;
+        border-radius: 1.13925vw;
     }
 
     .top {
         width: 100%;
-        height: 7vw;
+        height: 3.9375vw;
         background: #FFDC40;
-        border-top-left-radius: 1.568vw;
-        border-top-right-radius: 1.568vw;
+        border-top-left-radius: 1.13925vw;
+        border-top-right-radius: 1.13925vw;
     }
 
     h1 {
-        width: 30.188vw;
-        height: 10.951vw;
-        margin-top: 5.128vw;
+        width: 22.55925vw;
+        height: 3.8731875000000002vw;
+        margin-top: 1.4805vw;
         text-align: center;
-        font-size: 6.5vw;
+        font-size: 3.28125vw;
     }
 
     .sort-photo {
-        margin-top: 1vw;
-        margin-bottom: 2vw;
+        margin-top: 2.625vw;
+        margin-bottom: 1.3125vw;
         width: 80%;
         display: flex;
         justify-content: flex-end;
@@ -53,66 +55,67 @@
     .sort-photo:hover {
         cursor: pointer;
     }
-   
-    .sort1, .sort2{
-        width: 5vw;
-        height: 5vw;
-    }
 
     .input-container,
     .listClass {
-        width: 65.826vw;
-        border: 0.087vw solid #C4C4C4;
-        padding: 0.5vw;
+        width: 32.584125vw;
+        border: 0.11418749999999997vw solid #C4C4C4;
+        padding: 0.65625vw;
     }
 
     .input-container {
         display: flex;
         justify-content: space-between;
-        padding: 0.5vw;
-        height: 7.472vw;
-        border-radius: 2vw 2vw 2vw 2vw;
+        padding: 0.65625vw;
+        height: 4.557vw;
+        border-radius: 1.3125vw 1.3125vw 1.3125vw 1.3125vw;
     }
 
     .listClass {
+        font-size: 2vw;
         display: none;
         border-bottom: none;
-        border-radius: 2vw 2vw 0 0;
+        border-radius: 1.3125vw 1.3125vw 0 0;
         list-style: none;
-        max-height: 35vw;
+        max-height: 19.6875vw;
         overflow: auto;
     }
 
     input {
-        margin-top: 1vw;
         border: none;
         outline: none;
-        width: 19vw;
-        height: 2.8vw;
-        border-radius: 0.8vw;
+        width: 26.25vw;
+        border-radius: 1.05vw;
+        font-size: 2vw;
+    }
+
+    ::placeholder{
+        font-size: 2vw;
     }
 
     .button1 {
-        width: 10vw;
-        height: 10vw;
+        width: 4.785375vw;
+        height: 4.785375vw;
         background: #9953F1;
-        border-radius: 50%;
+        border-radius: 8.0889375vw;
         border: 0vw;
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 2vw;
     }
 
     .button2 {
-        width: 30.021vw;
-        height: 10vw;
+        width: 17.090062500000002vw;
+        height: 4.785375vw;
         background: #833AE0;
-        border-radius: 6.163vw;
+        border-radius: 8.0889375vw;
         border: 0vw;
         color: white;
         display: flex;
         align-items: center;
+        font-size: 2vw;
 
     }
 
@@ -122,31 +125,31 @@
     }
 
     .del {
-        margin-top: 1.5vw;
+        margin-top: 0.569625vw;
         background: none;
         border: none;
         outline: none;
-        width: 4vw;
-        height: 4vw;
-        background-image: url("./photo/delBtn.svg");
+        width: 1.96875vw;
+        height: 1.96875vw;
+        background-image: url("/photo/delBtn.svg");
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     .del:hover {
-        background-image: url("./photo/delBtn1.svg");
+        background-image: url("/photo/delBtn1.svg");
         cursor: pointer;
     }
 
     .buttons {
-        margin-top: 6vw;
-        margin-bottom: 6vw;
-        font-size: 6vw;
+        margin-top: 1.96875vw;
+        margin-bottom: 1.96875vw;
+        font-size: 1.5946875vw;
 
     }
 
     .addtext {
-        margin: 3vw;
+        margin: 3.9375vw;
     }
 
     .sort2 {
@@ -154,12 +157,12 @@
     }
 
     .delete2 {
-        margin-top: 1.5vw;
+        margin-top: 0.569625vw;
         background-image: url('/photo/delBtn.svg');
         background-size: cover;
         background-repeat: no-repeat;
-        width: 3.5vw;
-        height: 3.5vw;
+        width: 1.96875vw;
+        height: 1.96875vw;
         border: none;
         background-color: white;
         outline: none;
@@ -176,5 +179,4 @@
         display: flex;
         justify-content: space-between;
     }
-    
 }

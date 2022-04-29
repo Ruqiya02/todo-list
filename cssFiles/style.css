@@ -85,8 +85,12 @@
         border: none;
         outline: none;
         width: 20vw;
-        height: 2.8vw;
         border-radius: 0.8vw;
+        font-size: 1vw;
+    }
+
+    ::placeholder{
+        font-size: 1vw;
     }
 
     .button1 {
@@ -99,6 +103,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 1.4vw;
     }
 
     .button2 {
@@ -110,6 +115,7 @@
         color: white;
         display: flex;
         align-items: center;
+        font-size: 1.4vw;
 
     }
 

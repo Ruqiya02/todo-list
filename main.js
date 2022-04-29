@@ -2,6 +2,7 @@ const inputContainer = document.querySelector('.input-container')
 const input = document.querySelector('input')
 const todoList = document.querySelector('.listClass')
 const listElements = document.querySelectorAll(".item");
+const testli=document.querySelector('li')
 document.addEventListener('keyup', (event) => {
     if (event.keyCode == 13) {
         if (input.value !== '' && input.value !== ' ') {
@@ -28,13 +29,20 @@ document.addEventListener('keyup', (event) => {
 })
 const addButton = document.querySelector('.button2')
 addButton.addEventListener('click', () => {
-    inputContainer.style.display = "flex"
-    inputContainer.style.borderTop = 'none';
-    inputContainer.style.borderRadius = "0 0 1vw 1vw"
-    todoList.style.borderBottom = 'none'
-    todoList.style.borderRadius = "1vw 1vw 0 0"
-    todoList.scrollTop=todoList.scrollHeight
-    input.focus()
+    if(inputContainer.style.display=="none"){
+    
+        inputContainer.style.display = "flex"
+        inputContainer.style.borderTop = 'none';
+        inputContainer.style.borderRadius = "0 0 1vw 1vw"
+        todoList.style.borderBottom = 'none'
+        todoList.style.borderRadius = "1vw 1vw 0 0"
+        todoList.scrollTop=todoList.scrollHeight
+        input.focus()
+    }
+    else{
+        input.focus()
+    }
+    
 })
 const removebttn1 = document.querySelector(".del")
 removebttn1.addEventListener('click', () => {
@@ -45,6 +53,7 @@ function deletewithX() {
     const deleteBtn = document.querySelectorAll('.delete2');
     deleteBtn.forEach(item => {
         item.addEventListener('click', forRemove);
+       
     });
 }
 
@@ -56,7 +65,8 @@ function forRemove() {
         inputContainer.style.display = "flex";
         inputContainer.style.borderRadius = "1vw"
         inputContainer.style.border = "0.1em solid #c4c4c4"
-    }
+        input.focus()
+      }
 }
 
 const drag = document.querySelector('.wrapper')
